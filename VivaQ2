@@ -1,0 +1,28 @@
+class Employe implements Cloneable
+{
+    int id;
+    String name;
+    int salary;
+    int Age;
+    
+    Employe(){
+        id=24;
+        name="Pawan Singh";
+        salary=35000;
+        Age=26;
+    }
+    void display(){
+        System.out.print("\n\tEmployee Id     : "+id);
+        System.out.print("\n\tEmployee Name   : "+name);
+        System.out.print("\n\tEmployee Age    : "+Age);
+        System.out.print("\n\tEmployee Salary : "+salary);
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Employe a = new Employe();  
+		a.display();
+	}
+}
