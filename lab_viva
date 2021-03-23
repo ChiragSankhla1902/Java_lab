@@ -1,0 +1,37 @@
+interface chirag_92       //creating interface
+{
+abstract void division(int num1,int num2); //here create abstract so that it must be ovverride
+abstract void modules(int num1,int num2);
+}                          
+class chirag_8291 implements chirag_92   //implementing interface in stud class
+{
+int divisionis,moduleis;           //declaring the class variable (private) and so that we can use them
+String whatisname;        
+public void division(int num1,int num2)          //here is the division method which we have to ovveride it is public so that we 
+{                                                  //can ovverride it 
+    System.out.println("Override division method class");
+    divisionis=num1/num2;
+    }
+public void modules(int num1,int num2)              //same with modules method
+{ 
+      System.out.println("Override modules method class");
+    moduleis=num1%num2; }
+    void name(String n)
+{ whatisname=n; }
+void display()
+{
+System.out.println("After calculation divison is:"+divisionis);
+System.out.println("After calculation module is: :"+moduleis);
+}
+}
+
+class Main
+{
+public static void main(String args[])
+{ 
+System.out.println("CHIRAG SANKHALA(500075878)");
+chirag_8291 s=new chirag_8291();
+s.modules(91,2);
+s.division(100,20);
+s.display();
+}
